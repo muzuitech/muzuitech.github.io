@@ -395,7 +395,6 @@
       guideStart(true);
     };
     timer = setTimeout(type, 700);
-    go.focus({ preventScroll: true });
     ent.addEventListener('click', finish);
     document.addEventListener('keydown', (ev) => { if (!done && (ev.key === 'Enter' || ev.key === ' ' || ev.key === 'Escape')) { ev.preventDefault(); finish(); } });
   } else guideStart(false);
